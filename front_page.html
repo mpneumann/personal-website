@@ -3,145 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>My Projects</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    }
-
-    .content {
-    margin-left: 0; /* Remove extra margin since the sidebar is no longer used */
-    padding: 40px;
-    display: flex; /* Flexbox to align the nav and content horizontally */
-    align-items: flex-start; /* Align items to the top */
-    }
-
-    .nav {
-    display: inline-block;
-    margin-right: 20px; /* Space between nav and the title/content */
-    background-color: #f4f4f4;
-    padding: 15px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    border-radius: 5px; /* Optional: adds rounded corners to the nav box */
-    }
-
-    .nav a {
-    color: #1a0dab;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px; /* Space between each link */
-    font-size: 14px; /* Adjust font size for better readability */
-    }
-
-    .nav a:hover {
-    text-decoration: underline;
-    }
-
-    h1 {
-    margin: 0; /* Remove default margin to align better with nav */
-    }
-</style>
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 20px 0;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <div class="nav">
+        <a href="front_page.html">Home</a>
+        <a href="projects.html">Projects</a>
+    </div>
     <div class="content">
-        <div class="nav">
-            <a href="front_page.html">Home</a>
-            <a href="projects.html">Projects</a>
+        <div class="project">
+            <h2>Agentic Data Pipeline Constructor for Climate Scientists</h2>
+            <a href="https://github.com/agentic-earth/constellation" target="_blank">GitHub Repository</a>
+            <p><strong>Description:</strong> Constellation is a modular platform designed to help climate scientists easily spin up and manage climate models. It comprises four key microservices that work together to streamline machine learning workflows. The Core Backend Microservice ensures robust data persistence and coordination among all services. The Model Hosting Microservice leverages Modal Cloud for containerizing models, versioning, and deploying inference endpoints. The Dagster Microservice orchestrates end-to-end pipelines—from data import and preprocessing to outputting model inference results. Finally, the LLM-based Agent Microservice simplifies model and database selection through dynamic JSON generation, making it seamless for scientists to create, run, and iterate on climate models.</p>
+            <p><strong>Why:</strong> While talking to a climate researcher friend of mine, I realized that climate scientists often have trouble spinning up data pipelines to run their analyses. I built this project to make the data pipeline construction process easier for these scientists. 
+            </p>
         </div>
-        <h1>Hi, I'm Mason Neumann</h1>
-        <p>I'm a senior at Brown University studying Applied Math & Computer Science</p>
-        <p>You can find me on <a href="https://github.com/mpneumann" target="_blank">Github, </a><a href="https://www.linkedin.com/in/masonneumann/" target="_blank">LinkedIn, </a> and <a href="https://x.com/thelowkeymason" target="_blank">Twitter</a><p>
 
-        <h2>Some things about me:</h2>
-        <ul>
-            <li>Grew up in <a href="https://www.google.com/maps?q=modesto+ca" target="_blank">Modesto, CA</a></li>
-            <li>Went to Brown because of the Open Curriculum</li>
-            <li>Currently on winter break spending my time building a fence for my parents, coding, and reading</li>
-        </ul>
+        <div class="project">
+            <h2>Student-Run Venture Capital Fund Network GPT</h2>
+            <a href="https://chatgpt.com/share/67705f72-3dd8-8013-8639-f7dc236095d2" target="_blank">Project Link</a>
+            <p><strong>Description:</strong> This GPT helps identify the most suitable Brown alumni to reach out to for domain expertise based on user queries. It analyzes alumni profiles (from LinkedIn) and provides the name of the best match, along with their relevant achievements and experience, to assist student VCs who are performing due diligence on Brown University startups.</p>
+            <p><strong>Why:</strong> As Co-Director of Van Wickle Ventures, I realized that my organization was not utilizing the vast network of Brown alumni at our disposal. Also eager to see what the OpenAI GPT Agents buzz was all about, I decided to build this product using their platform.</p>
+        </div>
 
-        <h2>My favorite courses at Brown:</h2>
-        <ul>
-            <li>APMA 1080: Inference in Genomics and Molecular Biology taught by Professor Matthew Harrison
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        Covered topics such as Monte Carlo Estimations, Bayes Nets, Parameter Estimation, Mixture Models, Hidden Markov Models, Regression Models and Estimation, Multiple Hypothesis Testing, and Dimensionality Reduction used by computational biologists
-                    </li>
-                </ul>
-            </li>
-            <li>ECON 0110: Priciples of Economics taught by Professor Rachel Friedberg 
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        An introduction to macro and microeconomics. I went from having no formal understanding of market dynamics to being able to identify and understand the market happenings around me.
-                    </li>
-                </ul>
-            </li>
-            <li>DATA 2060: Machine Learning taught by Professor Andras Zsom
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        Covered topics such as PAC Learning, SGD, Boosting, Decision Trees, Naive Bayes, VC Dimension, K-nearest neighbors, K-means clustering, PCA used by data scientists
-                    </li>
-                </ul>
-            </li>
-            <li>RELS 0014: Jesus taught by Professor Jae Han
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        Examined the foundations of Christianity through an exploration of Jesus Christ. My final paper explored the Nicene Creed's incomplete theological refusal of Arianism.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>What I'm currently reading/consuming:</h2>
-        <ul>
-            <li><i>Dubliners</i> by James Joyce</li>
-            <li>An investigation of Endocrine Disrupting Chemicals (EDCs) in our food <a href="https://www.plasticlist.org/" target="_blank">PLASTICLIST</a></li>
-        </ul>
-
-        <h2>Favorite books:</h2>
-        <ul>
-            <li><i>Zero to One</i> by Peter Thiel
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        Changed how I think about value creation in the US.
-                    </li>
-                </ul>
-            </li>
-            <li><i>The Great Gatsby</i> by F. Scott Fitzgerald
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        I first read this book in high school and it opened my eyes to the duality of the American Dream.
-                    </li>
-                </ul>
-            </li>
-            <li><i>Barbarian Days</i> by Bill Finnegan
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        A great reminder to choose adventure. The best memoir that I have ever read.
-                    </li>
-                </ul>
-            </li>
-            <li><i>House of the Spirits</i> by Isabel Allende
-                <ul style="list-style-type: disc; margin-left: 20px;">
-                    <li style="font-size: 0.9em; color: #000000;">
-                        Lessons of power, privilege, and family beautifully woven together with magical realism.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <br>
-        <p>You can email me: <a href="mailto:neumannmason@yahoo.com">neumannmason@yahoo.com</a></p>
-        <p id="last-edited"></p>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const lastEditedElement = document.getElementById('last-edited');
-                const lastEditedDate = new Date('2024-12-30T14:39:00');
-                lastEditedElement.textContent = `Last edited on: ${lastEditedDate.toLocaleString()}`;
-            });
-        </script>
+        <div class="project">
+            <h2>SPY Spread Game</h2>
+            <a href="https://github.com/mpneumann/bouncing_balls" target="_blank">GitHub Repository</a>
+            <p><strong>Description:</strong> Bouncing Balls is a Python-based real-time visualization of the SPY ETFs daily open-close price changes using Pygame. Each trading day is represented as a ball whose color indicates price direction (positive or negative) and whose speed reflects the magnitude of the price change. Clicking on a ball shows its specific open-close spread, while pressing the spacebar pauses or resumes the animation. The project reads from a CSV file containing date, open, and close prices, and uses basic collision detection to simulate realistic bouncing behavior.</p>
+            <p><strong>Why:</strong> I have always been interested in visually representing data changes and wanted to experiment with a bouncing balls game medium. I was inspired to make this after tracking SPY leading up to the presidential election.</p>
+        </div>
     </div>
 </body>
-</html>
+</html> 
