@@ -13,19 +13,15 @@
             max-width: 800px;
             margin: auto;
         }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
+        .nav {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
         }
         a {
             color: #1a0dab;
             text-decoration: none;
+            margin-bottom: 10px;
         }
         a:hover {
             text-decoration: underline;
@@ -33,7 +29,7 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
+    <div class="nav">
         <a href="front_page.html">Home</a>
         <a href="projects.html">Projects</a>
     </div>
@@ -124,7 +120,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const lastEditedElement = document.getElementById('last-edited');
-                const lastEditedDate = new Date('2023-10-10T12:00:00');
+                const lastEditedDate = new Date('2024-12-30T14:39:00');
                 lastEditedElement.textContent = `Last edited on: ${lastEditedDate.toLocaleString()}`;
             });
         </script>
