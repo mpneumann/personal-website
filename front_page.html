@@ -18,14 +18,19 @@
             padding: 15px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
             position: fixed;
-            height: calc(100% - 60px); /* Adjust height to account for top margin */
+            height: 100%;
             overflow-y: auto;
-            margin-top: 40px; /* Adjust this value to align with content titles */
+            margin-top: 0; /* Remove top margin */
         }
         .content {
             margin-left: 200px;
-            padding: 40px;
+            padding: 20px;
             flex-grow: 1;
+            display: flex;
+            align-items: flex-start; /* Align content with sidebar */
+        }
+        .content h1, .content h2 {
+            margin-top: 0; /* Ensure titles have no top margin */
         }
         .sidebar a {
             color: #1a0dab;
@@ -36,27 +41,6 @@
         .sidebar a:hover {
             text-decoration: underline;
         }
-        /* body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .nav {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-        a {
-            color: #1a0dab;
-            text-decoration: none;
-            margin-bottom: 10px;
-        }
-        a:hover {
-            text-decoration: underline;
-        } */
     </style>
 </head>
 <body>
