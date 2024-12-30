@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Your Name</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            display: flex; /* Use flexbox to align sidebar and content */
-            flex-direction: row; /* Ensure the direction is row to keep sidebar on the left */
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #f4f4f4;
-            padding: 15px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            height: 100vh; /* Make sidebar full height */
-            position: fixed; /* Fix sidebar position */
-        }
-        .content {
-            margin-left: 200px; /* Offset content by sidebar width */
             padding: 20px;
-            flex-grow: 1; /* Allow content to take up remaining space */
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         a {
             color: #1a0dab;
             text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
         }
         a:hover {
             text-decoration: underline;
@@ -42,7 +38,96 @@
         <a href="projects.html">Projects</a>
     </div>
     <div class="content">
-        <!-- Home page content goes here -->
+        <h1>Hi, I'm Mason Neumann</h1>
+        <p>I'm a senior at Brown University studying Applied Math & Computer Science</p>
+        <p>You can find me on <a href="https://github.com/mpneumann" target="_blank">Github, </a><a href="https://www.linkedin.com/in/masonneumann/" target="_blank">LinkedIn, </a> and <a href="https://x.com/thelowkeymason" target="_blank">Twitter</a><p>
+
+        <h2>Some things about me:</h2>
+        <ul>
+            <li>Grew up in <a href="https://www.google.com/maps?q=modesto+ca" target="_blank">Modesto, CA</a></li>
+            <li>Went to Brown because of the Open Curriculum</li>
+            <li>Currently on winter break spending my time building a fence for my parents, coding, and reading</li>
+        </ul>
+
+        <h2>My favorite courses at Brown:</h2>
+        <ul>
+            <li>APMA 1080: Inference in Genomics and Molecular Biology taught by Professor Matthew Harrison
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        Covered topics such as Monte Carlo Estimations, Bayes Nets, Parameter Estimation, Mixture Models, Hidden Markov Models, Regression Models and Estimation, Multiple Hypothesis Testing, and Dimensionality Reduction used by computational biologists
+                    </li>
+                </ul>
+            </li>
+            <li>ECON 0110: Priciples of Economics taught by Professor Rachel Friedberg 
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        An introduction to macro and microeconomics. I went from having no formal understanding of market dynamics to being able to identify and understand the market happenings around me.
+                    </li>
+                </ul>
+            </li>
+            <li>DATA 2060: Machine Learning taught by Professor Andras Zsom
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        Covered topics such as PAC Learning, SGD, Boosting, Decision Trees, Naive Bayes, VC Dimension, K-nearest neighbors, K-means clustering, PCA used by data scientists
+                    </li>
+                </ul>
+            </li>
+            <li>RELS 0014: Jesus taught by Professor Jae Han
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        Examined the foundations of Christianity through an exploration of Jesus Christ. My final paper explored the Nicene Creed's incomplete theological refusal of Arianism.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>What I'm currently reading/consuming:</h2>
+        <ul>
+            <li><i>Dubliners</i> by James Joyce</li>
+            <li>An investigation of Endocrine Disrupting Chemicals (EDCs) in our food <a href="https://www.plasticlist.org/" target="_blank">PLASTICLIST</a></li>
+        </ul>
+
+        <h2>Favorite books:</h2>
+        <ul>
+            <li><i>Zero to One</i> by Peter Thiel
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        Changed how I think about value creation in the US.
+                    </li>
+                </ul>
+            </li>
+            <li><i>The Great Gatsby</i> by F. Scott Fitzgerald
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        I first read this book in high school and it opened my eyes to the duality of the American Dream.
+                    </li>
+                </ul>
+            </li>
+            <li><i>Barbarian Days</i> by Bill Finnegan
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        A great reminder to choose adventure. The best memoir that I have ever read.
+                    </li>
+                </ul>
+            </li>
+            <li><i>House of the Spirits</i> by Isabel Allende
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                    <li style="font-size: 0.9em; color: #000000;">
+                        Lessons of power, privilege, and family beautifully woven together with magical realism.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <p>You can email me: <a href="mailto:neumannmason@yahoo.com">neumannmason@yahoo.com</a></p>
+        <p id="last-edited"></p>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const lastEditedElement = document.getElementById('last-edited');
+                const lastEditedDate = new Date('2023-10-10T12:00:00');
+                lastEditedElement.textContent = `Last edited on: ${lastEditedDate.toLocaleString()}`;
+            });
+        </script>
     </div>
 </body>
 </html>
