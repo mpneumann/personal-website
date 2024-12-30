@@ -6,49 +6,52 @@
     <title>Your Name</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #f4f4f4;
-            padding: 15px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            position: fixed;
-            height: 100%;
-            overflow-y: auto;
-            margin-top: 0; /* Remove top margin */
-        }
-        .content {
-            margin-left: 200px;
-            padding: 20px;
-            flex-grow: 1;
-            display: flex;
-            align-items: flex-start; /* Align content with sidebar */
-        }
-        .content h1, .content h2 {
-            margin-top: 0; /* Ensure titles have no top margin */
-        }
-        .sidebar a {
-            color: #1a0dab;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-        }
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    }
+
+    .content {
+    margin-left: 0; /* Remove extra margin since the sidebar is no longer used */
+    padding: 40px;
+    display: flex; /* Flexbox to align the nav and content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    }
+
+    .nav {
+    display: inline-block;
+    margin-right: 20px; /* Space between nav and the title/content */
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Optional: adds rounded corners to the nav box */
+    }
+
+    .nav a {
+    color: #1a0dab;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px; /* Space between each link */
+    font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    .nav a:hover {
+    text-decoration: underline;
+    }
+
+    h1 {
+    margin: 0; /* Remove default margin to align better with nav */
+    }
+</style>
 </head>
 <body>
-    <div class="nav">
-        <a href="front_page.html">Home</a>
-        <a href="projects.html">Projects</a>
-    </div>
     <div class="content">
+        <div class="nav">
+            <a href="front_page.html">Home</a>
+            <a href="projects.html">Projects</a>
+        </div>
         <h1>Hi, I'm Mason Neumann</h1>
         <p>I'm a senior at Brown University studying Applied Math & Computer Science</p>
         <p>You can find me on <a href="https://github.com/mpneumann" target="_blank">Github, </a><a href="https://www.linkedin.com/in/masonneumann/" target="_blank">LinkedIn, </a> and <a href="https://x.com/thelowkeymason" target="_blank">Twitter</a><p>
