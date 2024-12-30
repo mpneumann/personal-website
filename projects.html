@@ -6,6 +6,37 @@
     <title>My Projects</title>
     <style>
         body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+    }
+    .sidebar {
+        width: 200px;
+        background-color: #f4f4f4;
+        padding: 15px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        position: fixed;
+        height: calc(100% - 60px); /* Adjust height to account for top margin */
+        overflow-y: auto;
+        margin-top: 60px; /* Adjust this value to align with content titles */
+    }
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+        flex-grow: 1;
+    }
+    .sidebar a {
+        color: #1a0dab;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
+        /* body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
@@ -25,7 +56,9 @@
         a:hover {
             text-decoration: underline;
         }
-    </style>
+            
+    </style> */
+</style>
 </head>
 <body>
     <div class="nav">
