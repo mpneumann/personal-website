@@ -4,12 +4,20 @@
       {
         "src": "front_page.html",
         "use": "@vercel/static"
+      },
+      {
+        "src": "projects.html",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "/",
         "dest": "/front_page.html"
+      },
+      {
+        "src": "/projects",
+        "dest": "/projects.html"
       }
     ]
   }
