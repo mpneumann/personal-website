@@ -72,13 +72,7 @@
     <h2>What I'm currently reading/consuming:</h2>
     <ul>
         <li><i>Dubliners</i> by James Joyce</li>
-        <li>An investigation of Endocrine Disrupting Chemicals (EDCs) in our food
-            <ul style="list-style-type: disc; margin-left: 20px;">
-                <li style="font-size: 0.9em; color: #000000;">
-                    <a href="https://www.plasticlist.org/" target="_blank">PLASTICLIST</a>
-                </li>
-            </ul>
-        </li>
+        <li>An investigation of Endocrine Disrupting Chemicals (EDCs) in our food <a href="https://www.plasticlist.org/" target="_blank">PLASTICLIST</a></li>
     </ul>
 
     <h2>Favorite books:</h2>
@@ -114,10 +108,13 @@
     </ul>
     <br>
     <p>You can email me: <a href="mailto:neumannmason@yahoo.com">neumannmason@yahoo.com</a></p>
+    <p id="last-edited"></p>
     <script>
-        const lastEditedElement = document.getElementById('last-edited');
-        const lastEditedDate = new Date();
-        lastEditedElement.textContent = `Last edited on: ${lastEditedDate.toLocaleString()}`;
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastEditedElement = document.getElementById('last-edited');
+            const lastEditedDate = new Date('2024-12-29T22:11:00');
+            lastEditedElement.textContent = `Last updated on: ${lastEditedDate.toLocaleString()}`;
+        });
     </script>
 </body>
 </html>
