@@ -1,0 +1,25 @@
+.content {
+  padding: 20px 0;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project h2 {
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #1a0dab;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project p {
+  margin: 10px 0;
+} 
