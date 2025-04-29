@@ -1,23 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "front_page.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "projects.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/front_page.html"
-      },
-      {
-        "src": "/projects",
-        "dest": "/projects.html"
-      }
-    ]
-  }
+  "version": 2,
+  "buildCommand": "cd pweb_react && npm install && npm run build",
+  "outputDirectory": "pweb_react/build",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
